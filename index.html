@@ -154,30 +154,24 @@
         <h2 class="title is-3" style="color: white;">Abstract</h2>
         <div class="content has-text-justified">
           <p style="color: white;">
-            The emergence of diffusion models has greatly propelled the progress
-            in image and video generation. Recently, some efforts have been
-            made in controllable video generation, including text-to-video,
-            image-to-video generation, video editing, and video motion control,
-            among which camera motion control is an important topic. However, existing camera motion control methods rely on training a
-            temporal camera module, and necessitate substantial computation
-            resources due to the large amount of parameters in video generation models. Moreover, existing methods pre-define camera motion
-            types during training, which limits their flexibility in camera control, preventing the realization of some specific camera controls,
-            such as various camera movements in films. Therefore, to reduce
-            training costs and achieve flexible camera control, we propose
-            MotionMaster, a novel training-free video motion transfer model, which
-            disentangles camera motions and object motions in source videos,
-            and transfers the extracted camera motions to new videos. We first
-            propose a one-shot camera motion disentanglement method to extract camera motion from a single source video, which separates
-            the moving objects from the background and estimates the camera
-            motion in the moving objects region based on the motion in the
-            background by solving a Poisson equation. Furthermore, we propose a few-shot camera motion disentanglement method to extract
-            the common camera motion from multiple videos with similar camera motions, which employs a window-based clustering technique
-            to extract the common features in temporal attention maps of multiple videos. Finally, we propose a motion combination method to
-            combine different types of camera motions together, enabling our
-            model a more controllable and flexible camera control. Extensive
-            experiments demonstrate that our training-free approach can effectively decouple camera-object motion and apply the decoupled
-            camera motion to a wide range of controllable video generation
-            tasks, achieving flexible and diverse camera motion control.
+            Recent years have witnessed significant progress in audio-driven human animation. 
+            However, critical challenges remain in (i) generating highly dynamic videos while 
+            preserving character consistency, (ii) achieving precise emotion alignment between 
+            characters and audio, and (iii) enabling multi-character audio-driven animation. 
+            To address these challenges, we propose HunyuanVideo-Avatar, a multimodal diffusion 
+            transformer (MM-DiT)-based model capable of simultaneously generating dynamic, 
+            emotion-controllable, and multi-character dialogue videos. Concretely, HunyuanVideo-Avatar 
+            introduces three key innovations: (i) A character image injection module is designed 
+            to replace the conventional addition-based character conditioning scheme, eliminating 
+            the inherent condition mismatch between training and inference. This ensures the 
+            dynamic motion and strong character consistency; (ii) An Audio Emotion Module (AEM) 
+            is introduced to extract and transfer the emotional cues from an emotion reference 
+            image to the target generated video, enabling fine-grained and accurate emotion style 
+            control; (iii) A Face-Aware Audio Adapter (FAA) is proposed to isolate the audio-driven 
+            character with latent-level face mask, enabling independent audio injection via 
+            cross-attention for multi-character scenarios. These innovations empower HunyuanVideo-Avatar 
+            to surpass state-of-the-art methods on benchmark datasets and a newly proposed wild dataset, 
+            generating realistic avatars in dynamic, immersive scenarios.
         </div>
       </div>
     </div>
